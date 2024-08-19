@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
-    <nav>
+    <nav className="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
       <select>
         <option value="Shop">Shop</option>
       </select>
