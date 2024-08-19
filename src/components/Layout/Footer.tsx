@@ -1,6 +1,12 @@
+import { Copyright, Form, Infos } from './Footer/index';
+
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <Form />
+      <Infos />
+      <Copyright />
+    </footer>
   );
 }
 
