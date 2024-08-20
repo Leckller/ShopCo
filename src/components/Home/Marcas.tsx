@@ -7,20 +7,18 @@ import ZARA from '../../assets/Marcas/ZARA.svg';
 function Marcas() {
   const marcas = [VERSACE, ZARA, GUCCI, PRADA, CALVIN];
   return (
-    <div className="w-screen bg-black flex justify-center">
-      <section
-        className="flex flex-row flex-wrap justify-between pt-5
-      pb-5 gap-5 w-[90%]"
-      >
-        {marcas.map((m) => (
-          <img
-            src={ m }
-            alt={ m.toString() }
-            key={ m.toString() }
-          />
-        ))}
-      </section>
-    </div>
+    <section
+      className="flex flex-row flex-wrap justify-between pt-5
+      pb-5 gap-5 w-[100%] bg-black"
+    >
+      {marcas.map((m) => (
+        <img
+          src={ m }
+          alt={ m.toString() }
+          key={ m.toString() }
+        />
+      ))}
+    </section>
   );
 }
 

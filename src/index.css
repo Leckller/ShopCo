@@ -14,6 +14,14 @@ small {
     margin: 0;
 }
 
+.carrossel {
+    scrollbar-width: 0;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
 @media (min-width: 2500px) {
     body {
         height: 100vh;
