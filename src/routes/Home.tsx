@@ -6,7 +6,7 @@ function Home() {
     <main className="w-full bg-[#F2F0F1] flex justify-center">
       <div
         className="flex flex-col
-     w-[90%] justify-between items-center gap-5 p-1"
+     w-[90%] justify-between items-center p-1"
       >
         <MainContent />
         <Marcas />
