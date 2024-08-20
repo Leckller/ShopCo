@@ -1,10 +1,13 @@
+import { Nav, SearchBar, Title } from './Header/index';
+
 function Header() {
   return (
-    <header
-      className="bg-black text-yellow-300 h-20  w-full
-    flex items-center justify-center"
-    >
-      <h1 className="text-2xl">Bem vindo, Compasser!!</h1>
+    <header className="w-full flex justify-center items-center">
+      <div className="flex flex-row w-[90%] justify-between items-center gap-5 p-1">
+        <Title />
+        <Nav />
+        <SearchBar />
+      </div>
     </header>
   );
 }
