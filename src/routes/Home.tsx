@@ -8,7 +8,7 @@ function Home() {
     <main className="w-full bg-[#F2F0F1] flex flex-col justify-center items-center">
       <div
         className="flex flex-col
-     w-[90%] justify-center items-center p-1"
+     w-[90%] justify-center items-center"
       >
         <MainContent />
       </div>

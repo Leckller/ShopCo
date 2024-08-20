@@ -8,8 +8,8 @@ function Marcas() {
   const marcas = [VERSACE, ZARA, GUCCI, PRADA, CALVIN];
   return (
     <section
-      className="flex flex-row flex-wrap justify-between pt-5
-      pb-5 gap-5 w-[100%] bg-black"
+      className="flex flex-row flex-wrap justify-center
+       lg:justify-between p-5 gap-5 w-[100%] bg-black"
     >
       {marcas.map((m) => (
         <img

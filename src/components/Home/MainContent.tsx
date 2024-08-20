@@ -5,7 +5,7 @@ function MainContent() {
   return (
     <section
       className="w-full flex flex-row flex-wrap lg:flex-nowrap
-     max-h-[800px] overflow-hidden justify-center"
+     lg:max-h-[500px] overflow-hidden justify-center"
     >
       <MainText />
       <Model />
