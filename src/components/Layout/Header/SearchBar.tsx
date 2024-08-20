@@ -7,15 +7,19 @@ function SearchBar() {
   return (
     <section
       className="flex flex-row justify-end items-center flex-grow
-       md:justify-center"
+       md:justify-center max-w-[600px] "
     >
 
-      <label className="flex flex-row justify-center md:border rounded-2xl md:w-full">
+      <label
+        className="flex flex-row justify-center rounded-2xl
+        md:border md:w-full"
+      >
         <img src={ Lupa } alt="lupa" />
         <input
           type="text"
           placeholder="Search for products..."
-          className="rounded-2xl md:visible focus:visible w-0 md:w-full invisible"
+          className="rounded-2xl focus:visible w-0 invisible
+          md:w-full md:visible"
         />
       </label>
 
