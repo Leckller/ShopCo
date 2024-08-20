@@ -3,9 +3,15 @@ import InfosContent from '../../../Utils/InfosContent';
 
 function InfosCards() {
   return (
-    <article>
+    <article
+      className="flex flex-row gap-5 justify-between
+       flex-grow flex-wrap"
+    >
       {InfosContent.map((info) => (
-        <article key={ info.title }>
+        <article
+          key={ info.title }
+          className="flex flex-col"
+        >
           <h3>{info.title}</h3>
           {info.subTitles.map((subTitle) => (
             <Link

@@ -1,29 +1,20 @@
 import InfosCards from './InfosCards';
 
+import Apps from './Apps';
+
 function Infos() {
   return (
-    <section>
-      <article>
-        <h2>
+    <section className="flex flex-col gap-5 lg:flex-row w-full">
+      <article className="flex flex-col gap-2 lg:max-w-[35%]">
+        <h2 className="font-extrabold text-xl">
           SHOP.CO
         </h2>
         <p>
           We have clothes that suits your style and which you’re proud to wear.
           From women to men.
         </p>
-        <article>
-          <button>
-            <img src="" alt="Twitter" />
-          </button>
-          <button>
-            <img src="" alt="Facebook" />
-          </button>
-          <button>
-            <img src="" alt="Instagram" />
-          </button>
-          <button>
-            <img src="" alt="GitHub" />
-          </button>
+        <article className="flex flex-row gap-5">
+          <Apps />
         </article>
       </article>
       <InfosCards />
