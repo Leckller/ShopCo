@@ -13,12 +13,15 @@ function Home() {
         <MainContent />
       </div>
       <Marcas />
-      <div
-        className="flex flex-col
-         w-[90%] justify-center items-center p-1"
-      >
-        <Carrossel title="New Arrivals" roupas={ Roupas.arrivals } />
-        <Carrossel title="Top Selling" roupas={ Roupas.topSeeling } />
+      <div className="w-full bg-white flex flex-col justify-center items-center">
+        <div
+          className="flex flex-col
+         w-[90%] justify-center items-center p-1 gap-5"
+        >
+          <Carrossel title="New Arrivals" roupas={ Roupas.arrivals } />
+          <div className="w-full border-t-2" />
+          <Carrossel title="Top Selling" roupas={ Roupas.topSeeling } />
+        </div>
       </div>
 
     </main>

@@ -3,11 +3,11 @@ import Roupa from './Roupa';
 
 function Arrivals({ roupas, title }: { roupas: IRoupa[], title: string }) {
   return (
-    <section className="w-[100%] justify-between flex flex-col">
-      <h1>{title}</h1>
+    <section className="w-[100%] items-center flex flex-col gap-10">
+      <h1 className="text-3xl font-bold">{title}</h1>
       <section
-        className="flex flex-col h-[400px] flex-wrap overflow-x-scroll
-        snap-x carrossel"
+        className="flex flex-col h-[470px] flex-wrap overflow-x-scroll
+        snap-x carrossel gap-10"
       >
         {roupas.map((roupa) => (
           <Roupa roupa={ roupa } key={ roupa.nome } />
