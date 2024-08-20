@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 p,
-a {
+a,
+small {
     color: #606060;
 }
