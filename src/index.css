@@ -16,6 +16,7 @@ small {
 
 .carrossel {
     scrollbar-width: 0;
+    outline: none;
 }
 
 .carrossel::-webkit-scrollbar {

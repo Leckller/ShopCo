@@ -14,14 +14,15 @@ function Styles() {
         flex-col"
     >
       <h1>BROWSE BY dress STYLE</h1>
-      <section className="flex flex-row flex-wrap justify-center gap-8 p-5">
+      <section className="flex flex-row flex-wrap justify-center gap-5 p-5 ">
         {styles.map((style, i) => (
           <button
             key={ style.title }
             className={ `
                 flex-grow
                 flex flex-row-reverse relative bg-white rounded-[40px]
-                ${i === 1 || i === 2 ? '' : ''}
+                ${i === 1 || i === 2 ? 'md:w-[50%]' : 'md:w-[35%]'}
+                max-h-[200px]
                 overflow-hidden
                 ` }
           >

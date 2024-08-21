@@ -1,4 +1,5 @@
 import Carrossel from '../components/Home/CarrosselRoupas';
+import Comments from '../components/Home/Comments';
 import MainContent from '../components/Home/MainContent';
 import Marcas from '../components/Home/Marcas';
 import Styles from '../components/Home/Styles';
@@ -14,7 +15,7 @@ function Home() {
         <MainContent />
       </div>
       <Marcas />
-      <div className="w-full bg-white flex flex-col justify-center items-center">
+      <div className="w-full bg-white flex flex-col justify-center items-center pb-10">
         <div
           className="flex flex-col
          w-[90%] justify-center items-center p-1 gap-5"
@@ -23,6 +24,7 @@ function Home() {
           <div className="w-full border-t-2" />
           <Carrossel title="Top Selling" roupas={ Roupas.topSeeling } />
           <Styles />
+          <Comments />
         </div>
       </div>
 

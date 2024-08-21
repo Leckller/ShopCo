@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import IRoupa from '../../Types/IRoupa';
 import { fullStar, halfStar } from '../../assets/Stars';
@@ -7,7 +6,6 @@ function Roupa({ roupa }: { roupa:IRoupa }) {
   const navigate = useNavigate();
   const { avaliacao, desconto, img, nome, preco } = roupa;
   const stars = [fullStar, fullStar, fullStar, fullStar, fullStar];
-  console.log(avaliacao.toString().split('.'));
   return (
     <button
       className="snap-center flex flex-col gap-2"
