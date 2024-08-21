@@ -1,6 +1,7 @@
 import Carrossel from '../components/Home/CarrosselRoupas';
 import MainContent from '../components/Home/MainContent';
 import Marcas from '../components/Home/Marcas';
+import Styles from '../components/Home/Styles';
 import { Roupas } from '../Utils/Roupas';
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
           <Carrossel title="New Arrivals" roupas={ Roupas.arrivals } />
           <div className="w-full border-t-2" />
           <Carrossel title="Top Selling" roupas={ Roupas.topSeeling } />
+          <Styles />
         </div>
       </div>
 
