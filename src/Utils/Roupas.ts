@@ -9,6 +9,10 @@ const tshirtWithTapeDetails = new Roupa({
   nome: 'T-shirt with Tape Details',
   preco: 120,
   desconto: 1,
+  type: 'Casual',
+  id: 1,
+  color: '',
+  size: 'Medium',
 });
 
 const SkinnyFitJeans = new Roupa({
@@ -17,6 +21,10 @@ const SkinnyFitJeans = new Roupa({
   nome: 'Skinny Fit Jeans',
   preco: 240,
   desconto: 0.8,
+  type: 'Casual',
+  id: 2,
+  color: '',
+  size: 'Medium',
 });
 
 const CheckeredShirt = new Roupa({
@@ -25,6 +33,10 @@ const CheckeredShirt = new Roupa({
   nome: 'Checkered Shirt',
   preco: 180,
   desconto: 1,
+  type: 'Casual',
+  id: 3,
+  color: '',
+  size: 'Medium',
 });
 
 const SleeveStripedTshirt = new Roupa({
@@ -33,6 +45,10 @@ const SleeveStripedTshirt = new Roupa({
   nome: 'Sleeve Striped T-shirt',
   preco: 130,
   desconto: 0.7,
+  type: 'Casual',
+  id: 4,
+  color: '',
+  size: 'Medium',
 });
 
 const arrivals = [
@@ -50,6 +66,10 @@ const VerticalStripedShirt = new Roupa({
   nome: 'Vertical Striped Shirt',
   preco: 212,
   desconto: 0.8,
+  type: 'Casual',
+  id: 5,
+  color: '',
+  size: 'Medium',
 });
 const CourageGraphicTshirt = new Roupa({
   img: TopSeeling.CourageGraphicTshirt,
@@ -57,6 +77,10 @@ const CourageGraphicTshirt = new Roupa({
   nome: 'Courage Graphic T-shirt',
   preco: 145,
   desconto: 1,
+  type: 'Casual',
+  id: 6,
+  color: '',
+  size: 'Medium',
 });
 const LooseFitBermudaShorts = new Roupa({
   img: TopSeeling.LooseFitBermudaShorts,
@@ -64,6 +88,10 @@ const LooseFitBermudaShorts = new Roupa({
   nome: 'Loose Fit Bermuda Shorts',
   preco: 80,
   desconto: 1,
+  type: 'Casual',
+  id: 7,
+  color: '',
+  size: 'Medium',
 });
 const FadedSkinnyJeans = new Roupa({
   img: TopSeeling.FadedSkinnyJeans,
@@ -71,6 +99,10 @@ const FadedSkinnyJeans = new Roupa({
   nome: 'Faded Skinny Jeans',
   preco: 210,
   desconto: 1,
+  type: 'Casual',
+  id: 8,
+  color: '',
+  size: 'Medium',
 });
 
 const topSeeling = [

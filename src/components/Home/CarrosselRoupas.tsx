@@ -1,7 +1,7 @@
 import IRoupa from '../../Types/IRoupa';
 import Roupa from './Roupa';
 
-function Arrivals({ roupas, title }: { roupas: IRoupa[], title: string }) {
+function CarrosselRoupas({ roupas, title }: { roupas: IRoupa[], title: string }) {
   return (
     <section className="w-[100%] items-center flex flex-col gap-10">
       <h1 className="text-3xl font-bold">{title}</h1>
@@ -17,4 +17,4 @@ function Arrivals({ roupas, title }: { roupas: IRoupa[], title: string }) {
   );
 }
 
-export default Arrivals;
+export default CarrosselRoupas;

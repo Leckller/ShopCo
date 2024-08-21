@@ -1,12 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import Casual from '../../assets/Models/Casual.png';
 import Gym from '../../assets/Models/Gym.png';
 import Party from '../../assets/Models/Party.png';
 import Formal from '../../assets/Models/Formal.png';
 
 function Styles() {
+  const navigate = useNavigate();
   const styles = [{ title: 'Casual', img: Casual },
     { title: 'Formal', img: Formal },
-    { title: 'Formal', img: Party },
+    { title: 'Party', img: Party },
     { title: 'Gym', img: Gym }];
   return (
     <section
@@ -18,6 +20,7 @@ function Styles() {
         {styles.map((style, i) => (
           <button
             key={ style.title }
+            onClick={ () => navigate(`/Category/${style.title}`) }
             className={ `
                 flex-grow
                 flex flex-row-reverse relative bg-white rounded-[40px]

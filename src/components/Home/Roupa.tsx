@@ -4,12 +4,12 @@ import { fullStar, halfStar } from '../../assets/Stars';
 
 function Roupa({ roupa }: { roupa:IRoupa }) {
   const navigate = useNavigate();
-  const { avaliacao, desconto, img, nome, preco } = roupa;
+  const { avaliacao, desconto, img, nome, preco, id } = roupa;
   const stars = [fullStar, fullStar, fullStar, fullStar, fullStar];
   return (
     <button
       className="snap-center flex flex-col gap-2"
-      onClick={ () => navigate(`/ProductDetail/${nome}`) }
+      onClick={ () => navigate(`/ProductDetail/${id}`) }
     >
       <img className="rounded-3xl" src={ img } alt={ nome } />
       <h2 className="text-2xl font-bold">{nome}</h2>
