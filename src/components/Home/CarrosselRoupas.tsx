@@ -6,7 +6,7 @@ function CarrosselRoupas({ roupas, title }: { roupas: IRoupa[], title: string })
     <section className="w-[100%] items-center flex flex-col gap-10">
       <h1 className="text-3xl font-bold">{title}</h1>
       <section
-        className="flex flex-col h-[470px] flex-wrap overflow-x-scroll
+        className="flex flex-col h-[425px] flex-wrap overflow-x-scroll
         snap-x carrossel gap-10"
       >
         {roupas.map((roupa) => (
