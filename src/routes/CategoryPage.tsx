@@ -15,7 +15,9 @@ function CategoryPage() {
         </p>
 
         <section className="flex flex-row w-full gap-8">
-          <Filter />
+          <div className=" border rounded-2xl h-full">
+            <Filter />
+          </div>
           <Produtos />
         </section>
       </section>

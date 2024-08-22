@@ -28,7 +28,7 @@ function Produtos() {
       </section>
       <section
         className="flex flex-row flex-wrap gap-10
-    justify-evenly lg:justify-between "
+    justify-evenly lg:justify-between"
       >
         {roupas.slice(0, 9).map((roupa) => (
           <Roupa roupa={ roupa } key={ roupa.id } />
