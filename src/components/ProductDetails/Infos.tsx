@@ -19,7 +19,7 @@ function Infos() {
       <p>descriçãp</p>
       <Colors />
       <Size />
-      <Add />
+      <Add product={ actualRoupa } />
     </section>
   );
 }
