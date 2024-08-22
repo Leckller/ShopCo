@@ -10,7 +10,7 @@ function Comment({ comment }: { comment: IComentario }) {
     <article
       className="flex flex-col
         gap-2 w-full md:w-[400px] snap-center
-        border p-2 rounded-xl"
+        border p-2 rounded-xl flex-grow"
     >
       <article className="flex flex-row">
         {stars.slice(0, Math.floor(avaliacao)).map((star, i) => (
