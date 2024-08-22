@@ -1,6 +1,25 @@
+import { useParams } from 'react-router-dom';
+import MaiorArrow from '../assets/Arrows/maiorArrow.svg';
+import Filter from '../components/ProductDetail/Filter';
+import Produtos from '../components/ProductDetail/Produtos';
+
 function CategoryPage() {
+  const { type } = useParams();
   return (
-    <div>CategoryPage</div>
+    <main className="w-full flex flex-col justify-center items-center">
+      <section className="border-t w-[90%] pt-5 mb-5">
+        <p className="flex flex-row gap-2 mb-5">
+          Home
+          <img src={ MaiorArrow } alt="Maior" />
+          {type}
+        </p>
+
+        <section className="flex flex-row w-full gap-8">
+          <Filter />
+          <Produtos />
+        </section>
+      </section>
+    </main>
   );
 }
 

@@ -8,7 +8,8 @@ function Roupa({ roupa }: { roupa:IRoupa }) {
   const stars = [fullStar, fullStar, fullStar, fullStar, fullStar];
   return (
     <button
-      className="snap-center flex flex-col gap-2"
+      className="snap-center flex flex-col gap-2 max-w-[400px] min-w-[200px] w-[25%]
+      flex-grow"
       onClick={ () => navigate(`/ProductDetail/${id}`) }
     >
       <img className="rounded-3xl" src={ img } alt={ nome } />
