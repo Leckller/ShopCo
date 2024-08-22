@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import MaiorArrow from '../assets/Arrows/maiorArrow.svg';
-import Filter from '../components/ProductDetail/Filter';
-import Produtos from '../components/ProductDetail/Produtos';
+import Filter from '../components/CategoryPage/Filter';
+import Produtos from '../components/CategoryPage/Produtos';
 
 function CategoryPage() {
   const { type } = useParams();
