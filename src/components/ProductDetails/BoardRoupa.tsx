@@ -10,23 +10,23 @@ function BoardRoupa() {
     <article className="flex flex-col-reverse md:flex-row gap-5">
       <article className="flex flex-row md:flex-col gap-5 justify-between">
         <img
-          className="w-[30%] md:w-full"
+          className="w-[30%] sm:min-w-[150px] flex-grow rounded-2xl"
           src={ actualRoupa?.img }
           alt={ actualRoupa?.nome }
         />
         <img
-          className="w-[30%] md:w-full"
+          className="w-[30%] sm:min-w-[150px] flex-grow rounded-2xl"
           src={ actualRoupa?.img }
           alt={ actualRoupa?.nome }
         />
         <img
-          className="w-[30%] md:w-full"
+          className="w-[30%] sm:min-w-[150px] flex-grow rounded-2xl"
           src={ actualRoupa?.img }
           alt={ actualRoupa?.nome }
         />
       </article>
       <img
-        className="flex-grow"
+        className="rounded-2xl flex-grow object-cover w-full"
         src={ actualRoupa?.img }
         alt={ actualRoupa?.nome }
       />

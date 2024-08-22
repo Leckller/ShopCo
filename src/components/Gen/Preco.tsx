@@ -1,6 +1,6 @@
 function Preco({ preco, desconto }: { preco: number, desconto: number }) {
   return (
-    <article className="flex flex-row gap-5">
+    <article className="flex flex-row gap-5  text-xl font-semibold">
       <span className="before:content-['$'] text-black">
         {preco}
       </span>

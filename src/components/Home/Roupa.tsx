@@ -16,7 +16,7 @@ function Roupa({ roupa }: { roupa:IRoupa }) {
       <img className="rounded-3xl" src={ img } alt={ nome } />
       <h2 className="text-2xl font-bold text-start">{nome}</h2>
 
-      <section className="flex flex-col gap-5 text-xl font-semibold">
+      <section className="flex flex-col gap-5">
 
         <Avaliacao avaliacao={ avaliacao } />
         <Preco desconto={ desconto } preco={ preco } />

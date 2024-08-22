@@ -3,7 +3,7 @@ import { fullStar, halfStar } from '../../assets/Stars';
 function Avaliacao({ avaliacao }: { avaliacao: number }) {
   const stars = [fullStar, fullStar, fullStar, fullStar, fullStar];
   return (
-    <article className="flex flex-row">
+    <article className="flex flex-row font-semibold">
       {stars.slice(0, Math.floor(avaliacao)).map((star, i) => (
         <img
           src={ star }
