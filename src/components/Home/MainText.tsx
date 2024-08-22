@@ -6,13 +6,13 @@ function MainText() {
   ];
   return (
     <section
-      className="flex flex-col items-start flex-grow pt-5
-      justify-around gap-5 md:gap-0"
+      className="flex flex-col items-start pt-5
+      justify-around gap-5 md:gap-0 md:min-w-[50%]:"
     >
-      <h1 className="font-extrabold text-4xl">
+      <h1 className="font-extrabold text-5xl">
         FIND CLOTHES THAT MATCHES YOUR STYLE
       </h1>
-      <p>
+      <p className="text-2xl">
         Browse through our diverse range of meticulously crafted garments,
         designed to bring out your individuality and cater to your sense of style.
       </p>

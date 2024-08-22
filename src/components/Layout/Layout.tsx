@@ -6,9 +6,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="w-full flex flex-col justify-center items-center">
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </>
   );

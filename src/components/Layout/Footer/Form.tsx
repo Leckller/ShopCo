@@ -3,6 +3,7 @@ import Email from '../../../assets/Footer/email.svg';
 function Form() {
   return (
     <form
+      onSubmit={ (e) => e.preventDefault() }
       className="w-full bg-black text-white flex flex-col md:flex-row flex-nowrap gap-2
       rounded-2xl p-5
       "
