@@ -1,6 +1,6 @@
 import Config from '../../../assets/Config/Config.svg';
 
-function HeaderFilter() {
+function Header() {
   return (
     <article
       className="flex flex-row flex-nowrap justify-between"
@@ -11,4 +11,4 @@ function HeaderFilter() {
   );
 }
 
-export default HeaderFilter;
+export default Header;

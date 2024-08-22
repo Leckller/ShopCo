@@ -1,6 +1,6 @@
 import OptionGeneric from './OptionGeneric';
 
-function PriceFilter() {
+function Price() {
   return (
     <OptionGeneric title="Price">
       <input type="range" />
@@ -8,4 +8,4 @@ function PriceFilter() {
   );
 }
 
-export default PriceFilter;
+export default Price;

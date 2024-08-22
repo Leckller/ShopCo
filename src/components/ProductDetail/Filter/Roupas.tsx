@@ -1,8 +1,9 @@
 import MaiorArrow from '../../../assets/Arrows/maiorArrow.svg';
+import OptionGeneric from './OptionGeneric';
 
-function RoupasFilter() {
+function Roupas() {
   return (
-    <article className="flex flex-col gap-5 border-t pt-5">
+    <OptionGeneric title="">
       {['T-shirts', 'Shorts', 'Shirts', 'Hoodie', 'Jeans'].map((roupa) => (
         <button
           key={ roupa }
@@ -12,8 +13,8 @@ function RoupasFilter() {
           <img src={ MaiorArrow } alt="Maior" />
         </button>
       ))}
-    </article>
+    </OptionGeneric>
   );
 }
 
-export default RoupasFilter;
+export default Roupas;
