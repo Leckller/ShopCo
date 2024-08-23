@@ -6,7 +6,7 @@ function Cart() {
   const { cart } = useAppSelector((s) => s.Cart);
   return (
     <main className="w-full flex flex-col justify-center items-center">
-      <section className="w-[90%] flex flex-col mb-10 gap-5">
+      <section className="w-[90%] flex flex-col mb-10 gap-5 min-h-52">
         <h2 className="text-4xl font-extrabold">
           YOUR CART
         </h2>
