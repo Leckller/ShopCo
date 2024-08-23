@@ -2,12 +2,12 @@ function Preco({ preco, desconto }: { preco: number, desconto: number }) {
   return (
     <article className="flex flex-row gap-5  text-xl font-semibold">
       <span className="before:content-['$'] text-black">
-        {preco}
+        {`${(preco * desconto).toFixed()}`}
       </span>
       {desconto !== 1 && (
         <>
           <span className="text-gray-500 line-through decoration-1">
-            {`$${(preco * desconto).toFixed()}`}
+            {`$${(preco).toFixed()}`}
           </span>
           <span
             className=" bg-red-100 text-red-500

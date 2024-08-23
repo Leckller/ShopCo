@@ -2,7 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import IRoupa from '../../Types/IRoupa';
 
 interface CartState {
-  cart: IRoupa[];
+  cart: { product:IRoupa, quantity: number }[];
 }
 
 const initialState: CartState = {
@@ -15,17 +15,30 @@ export const CartSlice = createSlice({
   reducers: {
     // IMPLEMENTAR UM ALGORITMO MAIS EFICIENTE!!
     addToCart(state, action: PayloadAction<{ product: IRoupa, quantity: number }>) {
-      for (let i = 0; i < action.payload.quantity; i++) {
-        state.cart.push(action.payload.product);
+      const { product, quantity } = action.payload;
+      const productInCart = state.cart.find((p) => p.product.id === product.id);
+      if (productInCart) {
+        productInCart.quantity++;
+        return;
       }
+      state.cart.push({ product, quantity });
     },
     removeItem(state, action: PayloadAction<IRoupa>) {
-      const index = state.cart.findIndex((e) => e.id === action.payload.id);
-      state.cart = [...state.cart.filter((_, i) => i !== index)];
+      const product = action.payload;
+      const productInCart = state.cart.find((p) => p.product.id === product.id);
+      if (!productInCart) { return; }
+      if (productInCart.quantity <= 1) {
+        state.cart = [...state.cart.filter((r) => r.product.id !== product.id)];
+        return;
+      }
+      productInCart.quantity--;
+    },
+    removeStakItem(state, action: PayloadAction<IRoupa>) {
+      state.cart = [...state.cart.filter((r) => r.product.id !== action.payload.id)];
     },
   },
 });
 
-export const { addToCart, removeItem } = CartSlice.actions;
+export const { addToCart, removeItem, removeStakItem } = CartSlice.actions;
 
 export default CartSlice.reducer;
