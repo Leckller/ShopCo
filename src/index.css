@@ -11,16 +11,21 @@ small {
 * {
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
     margin: 0;
 }
 
 .carrossel {
-    scrollbar-width: 0;
+    scrollbar-width: none;
     outline: none;
 }
 
 .carrossel::-webkit-scrollbar {
     display: none;
+}
+
+html {
+    scrollbar-color: black #F0EEED;
 }
 
 @media (min-width: 2500px) {
