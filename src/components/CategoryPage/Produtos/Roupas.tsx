@@ -1,9 +1,8 @@
 import Roupa from '../../Home/Roupa';
-import { Roupas as r } from '../../../Utils/Roupas';
+import { useAppSelector } from '../../../hooks/reduxHooks';
 
 function Roupas() {
-  const roupas = [...r.arrivals, ...r.topSeeling,
-    ...r.arrivals, ...r.topSeeling];
+  const { products: roupas } = useAppSelector((s) => s.Products);
 
   return (
     <section

@@ -1,10 +1,23 @@
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 import MaiorArrow from '../assets/Arrows/maiorArrow.svg';
 import Filter from '../components/CategoryPage/Filter';
 import Produtos from '../components/CategoryPage/Produtos';
+import { Roupas as r } from '../Utils/Roupas';
+import { useAppDispatch } from '../hooks/reduxHooks';
+import { setProducts } from '../redux/Reducers/Products';
 
 function CategoryPage() {
   const { type } = useParams();
+  const dispatch = useAppDispatch();
+
+  const roupas = [...r.arrivals, ...r.topSeeling,
+    ...r.arrivals, ...r.topSeeling];
+
+  useEffect(() => {
+    dispatch(setProducts(roupas));
+  }, []);
+
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className="border-t w-[90%] pt-5 mb-5">
