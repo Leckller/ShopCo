@@ -9,7 +9,7 @@ function Roupa({ roupa }: { roupa: IRoupa }) {
   return (
     <button
       className="snap-center flex flex-col gap-2 max-w-[400px] min-w-[200px] w-[20%]
-      justify-between flex-grow"
+      justify-between flex-grow carousel-item"
       onClick={ () => {
         navigate(`/ProductDetail/${id}`);
         // eslint-disable-next-line no-restricted-globals

@@ -11,8 +11,7 @@ function CategoryPage() {
   const { type } = useParams();
   const dispatch = useAppDispatch();
 
-  const roupas = [...r.arrivals, ...r.topSeeling,
-    ...r.arrivals, ...r.topSeeling];
+  const roupas = [...r.arrivals, ...r.topSeeling];
 
   useEffect(() => {
     dispatch(setProducts(roupas));
