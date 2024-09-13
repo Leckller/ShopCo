@@ -12,8 +12,8 @@ function ProductDetails() {
      w-[90%] justify-center items-center mb-20"
       >
         <section
-          className="flex flex-col md:flex-row gap-5 justify-between
-        w-full md:max-h-[530px] mb-10"
+          className="flex flex-col lg:flex-row gap-5 justify-between
+        w-full lg:max-h-[530px] mb-10"
         >
           <BoardRoupa />
           <Infos />

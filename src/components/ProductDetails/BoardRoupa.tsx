@@ -7,7 +7,7 @@ function BoardRoupa() {
   const actualRoupa = roupas.find((e) => e.id === +id!);
 
   return (
-    <article className="flex flex-col-reverse md:flex-row gap-5">
+    <article className="flex flex-col-reverse md:flex-row gap-2">
       <article className="flex flex-row md:flex-col gap-5 justify-between">
         <img
           className="w-[30%] sm:min-w-[150px] flex-grow rounded-2xl"
@@ -26,7 +26,7 @@ function BoardRoupa() {
         />
       </article>
       <img
-        className="rounded-2xl flex-grow object-cover w-full"
+        className="rounded-2xl flex-grow object-cover w-full  max-w-[500px]"
         src={ actualRoupa?.img }
         alt={ actualRoupa?.nome }
       />

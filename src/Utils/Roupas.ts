@@ -56,6 +56,10 @@ const arrivals = [
   SkinnyFitJeans,
   CheckeredShirt,
   SleeveStripedTshirt,
+  tshirtWithTapeDetails,
+  SkinnyFitJeans,
+  CheckeredShirt,
+  SleeveStripedTshirt,
 ];
 
 // TOP SEELING
@@ -106,6 +110,10 @@ const FadedSkinnyJeans = new Roupa({
 });
 
 const topSeeling = [
+  VerticalStripedShirt,
+  CourageGraphicTshirt,
+  LooseFitBermudaShorts,
+  FadedSkinnyJeans,
   VerticalStripedShirt,
   CourageGraphicTshirt,
   LooseFitBermudaShorts,

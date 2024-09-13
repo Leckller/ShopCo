@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="scrollable" style="overflow-x: scroll; white-space: nowrap; width: 100%; height: 300px; cursor: grab;">
+        <!-- Conteúdo da seção -->
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+        <div style="display: inline-block; width: 500px; height: 100%;">
+            <button style="width: 100%; height: 100%;">
+                teste
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const scrollable = document.getElementById('scrollable');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let isDragging = false;
+
+        scrollable.addEventListener('mousedown', (e) => {
+            isDown = true;
+            scrollable.style.cursor = 'grabbing';
+            startX = e.pageX - scrollable.offsetLeft;
+            scrollLeft = scrollable.scrollLeft;
+        });
+
+        scrollable.addEventListener('mouseleave', () => {
+            isDown = false;
+            isDragging = false;
+            scrollable.style.cursor = 'grab';
+        });
+
+        scrollable.addEventListener('mouseup', () => {
+            isDown = false;
+            scrollable.style.cursor = 'grab';
+            if (!isDragging) {
+                // Se o mouse não se moveu muito, trate como clique
+                console.log('Clique detectado');
+            }
+            isDragging = false;
+        });
+
+        scrollable.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollable.offsetLeft;
+            const walk = (x - startX) * 2;
+            scrollable.scrollLeft = scrollLeft - walk;
+
+            if (Math.abs(walk) > 5) {
+                isDragging = true;  // Se mover mais de 5px, considera como arrastar
+            }
+        });
+
+        // Previne o clique nos itens se houver arrasto
+        document.querySelectorAll('.carousel-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                if (isDragging) {
+                    e.preventDefault();  // Previne o clique se houve arrasto
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

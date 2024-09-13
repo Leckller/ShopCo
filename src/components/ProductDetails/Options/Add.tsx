@@ -9,23 +9,31 @@ function Add({ product }: { product: IRoupa }) {
   const [quantity, setQuantity] = useState(1);
   return (
     <OptionGeneric d>
-      <section className="flex flex-row justify-between w-full">
-        <article className="flex flex-row gap-5">
+      <section className="flex flex-row justify-between w-full gap-5 flex-wrap">
+        <article
+          className="flex flex-row gap-5 bg-gray-200
+          justify-around items-center rounded-3xl"
+        >
           <button
+            className="text-2xl pl-2"
             onClick={ () => setQuantity((prev) => (prev <= 1 ? 1 : prev - 1)) }
           >
             -
           </button>
 
-          <p>{quantity}</p>
+          <p className="text-black">{quantity}</p>
 
           <button
+            className="text-2xl pr-2"
             onClick={ () => setQuantity((prev) => prev + 1) }
           >
             +
           </button>
         </article>
-        <button onClick={ () => dispatch(addToCart({ product, quantity })) }>
+        <button
+          className="bg-black flex-grow text-white p-2 rounded-3xl"
+          onClick={ () => dispatch(addToCart({ product, quantity })) }
+        >
           Add to cart
         </button>
       </section>

@@ -13,7 +13,7 @@ function Cart() {
 
         {cart.length !== 0 ? (
           <section className="flex flex-col md:flex-row gap-5 ">
-            <div>
+            <div className="flex-grow">
               <article className="flex flex-col gap-3 flex-grow rounded-3xl border p-4">
                 {cart.map((c) => (
                   <Roupa product={ c } key={ c.product.id } />
